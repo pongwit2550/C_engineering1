@@ -177,7 +177,7 @@ int program7(){
 
     
 }
-
+//function นับถอยหลัง
 void Time_countdown(int sec){
    while (sec > 0)
    {
@@ -189,7 +189,7 @@ void Time_countdown(int sec){
    printf("Time Out!!!!!");
    
 }
-
+//function จับเวลา
 void Time_counter(sec){
   for(int i = 0; i < sec; i++){
       printf("Time : %d \n", i);
