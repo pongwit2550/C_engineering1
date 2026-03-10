@@ -3,6 +3,7 @@
 #define Pi 3.14;
 
 float R = 6.5;
+int V[5] = {0,1,10,20,30};
 int MinIn3(int x,int y,int z){
     return (x <= y && x <= z) ? x : (y <= x && y <= z) ? y : z;
 }
@@ -25,13 +26,19 @@ float Can_Skin(float r, float h)
     return skincan;
 
 }
-/*
+
 
 
 void PrintArray (int v[], int num){
 
+    for (int i = 0; i <= num; i++)
+    {
+        printf("index in Array V[%d] : %d \n" , i ,i );
+    }
+    
+   
 }
-*/
+
 
 
 float powfloat(float num1, int num2){
@@ -53,6 +60,9 @@ int main()
     }
     
     printf("Pow float : %.2f", powfloat(num_1,num_2));
+
+
+    PrintArray(V,5);
     
     
     
